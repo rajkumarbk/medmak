@@ -168,47 +168,92 @@ window.addEventListener('resize', handleScrollAnimation); // Re-check on resize
 handleScrollAnimation();
 
 // ==Mobile Menu==
+// ==Mobile Menu with Cross Button==
 const mobileBtn = document.getElementById('mobileMenuBtn');
-if (mobileBtn) {
-    mobileBtn.addEventListener('click', () => {
-        const navLinks = document.getElementById('navLinks');
-        if (navLinks.style.display === 'flex') {
-            navLinks.style.display = 'none';
-        } else {
-            navLinks.style.display = 'flex';
-            navLinks.style.flexDirection = 'column';
-            navLinks.style.position = 'absolute';
-            navLinks.style.top = '80px';
-            navLinks.style.right = '20px';
-            navLinks.style.background = 'white';
-            navLinks.style.padding = '20px';
-            navLinks.style.borderRadius = '20px';
-            navLinks.style.boxShadow = 'var(--shadow)';
-            navLinks.style.width = '200px';
-            navLinks.style.zIndex = '1000';
-        }
-    });
-}
+const navLinks = document.getElementById('navLinks');
+const hamburgerIcon = document.getElementById('hamburgerIcon');
+const closeIcon = document.getElementById('closeIcon');
 
-// ==Smooth scrolling for anchor links==
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-            
-            // Close mobile menu if open
-            if (window.innerWidth <= 992) {
-                const navLinks = document.getElementById('navLinks');
-                navLinks.style.display = 'none';
-            }
+if (mobileBtn && navLinks) {
+    // Function to open mobile menu
+    function openMobileMenu() {
+        navLinks.style.display = 'flex';
+        navLinks.style.flexDirection = 'column';
+        navLinks.style.position = 'absolute';
+        navLinks.style.top = '80px';
+        navLinks.style.right = '20px';
+        navLinks.style.background = 'white';
+        navLinks.style.padding = '20px';
+        navLinks.style.borderRadius = '20px';
+        navLinks.style.boxShadow = 'var(--shadow)';
+        navLinks.style.width = '200px';
+        navLinks.style.zIndex = '1000';
+        
+        // Toggle icons
+        hamburgerIcon.style.display = 'none';
+        closeIcon.style.display = 'inline-block';
+    }
+    
+    // Function to close mobile menu
+    function closeMobileMenu() {
+        navLinks.style.display = 'none';
+        
+        // Toggle icons
+        hamburgerIcon.style.display = 'inline-block';
+        closeIcon.style.display = 'none';
+    }
+    
+    // Toggle menu on button click
+    mobileBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (navLinks.style.display === 'flex') {
+            closeMobileMenu();
+        } else {
+            openMobileMenu();
         }
     });
-});
+    
+    // Close menu when clicking on a link
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            closeMobileMenu();
+        });
+    });
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!navLinks.contains(e.target) && !mobileBtn.contains(e.target)) {
+            closeMobileMenu();
+        }
+    });
+    
+    // Handle window resize
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 992) {
+            navLinks.style.display = 'flex';
+            navLinks.style.flexDirection = 'row';
+            navLinks.style.position = 'static';
+            navLinks.style.background = 'transparent';
+            navLinks.style.padding = '0';
+            navLinks.style.boxShadow = 'none';
+            navLinks.style.width = 'auto';
+            
+            // Reset icons
+            hamburgerIcon.style.display = 'none';
+            closeIcon.style.display = 'none';
+        } else {
+            navLinks.style.display = 'none';
+            hamburgerIcon.style.display = 'inline-block';
+            closeIcon.style.display = 'none';
+        }
+    });
+    
+    // Initial check for desktop
+    if (window.innerWidth > 992) {
+        hamburgerIcon.style.display = 'none';
+        closeIcon.style.display = 'none';
+    }
+}
 
 // ==Set initial language==
 setLanguage('ar');

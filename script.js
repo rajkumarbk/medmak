@@ -167,16 +167,27 @@ window.addEventListener('resize', handleScrollAnimation); // Re-check on resize
 // Initial check
 handleScrollAnimation();
 
-// ==Mobile Menu==
-// ==Mobile Menu with Cross Button==
+// Mobile Menu with Cross Button
 const mobileBtn = document.getElementById('mobileMenuBtn');
 const navLinks = document.getElementById('navLinks');
 const hamburgerIcon = document.getElementById('hamburgerIcon');
 const closeIcon = document.getElementById('closeIcon');
 
 if (mobileBtn && navLinks) {
+    // Function to check if mobile view is active
+    function isMobileView() {
+        return window.innerWidth <= 992;
+    }
+    
+    // Function to check if mobile menu is open
+    function isMobileMenuOpen() {
+        return navLinks.style.display === 'flex' && isMobileView();
+    }
+    
     // Function to open mobile menu
     function openMobileMenu() {
+        if (!isMobileView()) return;
+        
         navLinks.style.display = 'flex';
         navLinks.style.flexDirection = 'column';
         navLinks.style.position = 'absolute';
@@ -196,6 +207,8 @@ if (mobileBtn && navLinks) {
     
     // Function to close mobile menu
     function closeMobileMenu() {
+        if (!isMobileView()) return;
+        
         navLinks.style.display = 'none';
         
         // Toggle icons
@@ -206,6 +219,8 @@ if (mobileBtn && navLinks) {
     // Toggle menu on button click
     mobileBtn.addEventListener('click', (e) => {
         e.stopPropagation();
+        if (!isMobileView()) return;
+        
         if (navLinks.style.display === 'flex') {
             closeMobileMenu();
         } else {
@@ -214,25 +229,32 @@ if (mobileBtn && navLinks) {
     });
     
     // Close menu when clicking on a link
-navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-        // Only close mobile menu on mobile devices
-        if (window.innerWidth <= 992) {
-            closeMobileMenu();
-        }
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            if (isMobileView()) {
+                closeMobileMenu();
+            }
+        });
     });
-});
     
-    // Close menu when clicking outside
+    // Close menu when clicking outside - ONLY when menu is open on mobile
     document.addEventListener('click', (e) => {
-        if (!navLinks.contains(e.target) && !mobileBtn.contains(e.target)) {
+        // Only close if:
+        // 1. We're on mobile view
+        // 2. The mobile menu is currently open
+        // 3. The click is outside the menu and the menu button
+        if (isMobileView() && 
+            isMobileMenuOpen() && 
+            !navLinks.contains(e.target) && 
+            !mobileBtn.contains(e.target)) {
             closeMobileMenu();
         }
     });
     
     // Handle window resize
     window.addEventListener('resize', () => {
-        if (window.innerWidth > 992) {
+        if (!isMobileView()) {
+            // Desktop view - reset to default
             navLinks.style.display = 'flex';
             navLinks.style.flexDirection = 'row';
             navLinks.style.position = 'static';
@@ -240,20 +262,37 @@ navLinks.querySelectorAll('a').forEach(link => {
             navLinks.style.padding = '0';
             navLinks.style.boxShadow = 'none';
             navLinks.style.width = 'auto';
+            navLinks.style.right = 'auto';
+            navLinks.style.top = 'auto';
             
-            // Reset icons
+            // Hide both icons on desktop
             hamburgerIcon.style.display = 'none';
             closeIcon.style.display = 'none';
         } else {
+            // Mobile view - ensure menu starts closed
             navLinks.style.display = 'none';
             hamburgerIcon.style.display = 'inline-block';
             closeIcon.style.display = 'none';
         }
     });
     
-    // Initial check for desktop
-    if (window.innerWidth > 992) {
+    // Initial setup based on screen size
+    if (!isMobileView()) {
+        // Desktop
+        navLinks.style.display = 'flex';
+        navLinks.style.flexDirection = 'row';
+        navLinks.style.position = 'static';
+        navLinks.style.background = 'transparent';
+        navLinks.style.padding = '0';
+        navLinks.style.boxShadow = 'none';
+        navLinks.style.width = 'auto';
+        
         hamburgerIcon.style.display = 'none';
+        closeIcon.style.display = 'none';
+    } else {
+        // Mobile
+        navLinks.style.display = 'none';
+        hamburgerIcon.style.display = 'inline-block';
         closeIcon.style.display = 'none';
     }
 }

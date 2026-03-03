@@ -214,11 +214,14 @@ if (mobileBtn && navLinks) {
     });
     
     // Close menu when clicking on a link
-    navLinks.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
+navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        // Only close mobile menu on mobile devices
+        if (window.innerWidth <= 992) {
             closeMobileMenu();
-        });
+        }
     });
+});
     
     // Close menu when clicking outside
     document.addEventListener('click', (e) => {

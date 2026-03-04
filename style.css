@@ -445,7 +445,7 @@ h2:after {
 /* For stats items */
 .stats-box .stat-item {
     opacity: 0;
-    background-image: url('images/project2.jpeg');
+    /* background-image: url('images/project2.jpeg'); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -524,6 +524,7 @@ h2:after {
     font-size: 1.2rem;
     margin-bottom: 30px;
     line-height: 2;
+    text-align: justify;
 }
 
 .stats-box {
@@ -559,6 +560,15 @@ h2:after {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+}
+
+.vision_text {
+
+    text-align: justify;
+}
+
+.mission-text {
+    text-align: justify;
 }
 
 .vm-card {
@@ -1100,5 +1110,31 @@ h2:after {
 
     .btn {
         padding: 12px 24px;
+    }
+}
+
+/* Vision 2030 logo */
+.vision-logo {
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+.vision-img {
+    height: 50px;  /* Adjust as needed */
+    width: auto;
+    object-fit: contain;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .vision-img {
+        height: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .vision-img {
+        height: 35px;
     }
 }

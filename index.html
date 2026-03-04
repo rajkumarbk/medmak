@@ -1,67 +1,73 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- SEO Meta Tags -->
     <title>مدماك الجنوب للمقاولات | Medmak Aljanub For Contracting</title>
-    <meta name="description" content="مؤسسة مدماك الجنوب للمقاولات، إحدى المؤسسات الرائدة في مجال المقاولات العامة في المملكة العربية السعودية، تتخصص في تنفيذ مشاريع البنية التحتية والعمارة بأعلى معايير الجودة والأمان.">
+    <meta name="description"
+        content="مؤسسة مدماك الجنوب للمقاولات، إحدى المؤسسات الرائدة في مجال المقاولات العامة في المملكة العربية السعودية، تتخصص في تنفيذ مشاريع البنية التحتية والعمارة بأعلى معايير الجودة والأمان.">
     <meta name="keywords" content="مقاولات, بناء, ترميم, تشطيب, صيانة طرق, الدمام, السعودية, مدماك الجنوب">
     <meta name="author" content="Medmak Aljanub">
     <meta name="robots" content="index, follow">
-    
+
     <!-- Open Graph / Social Media -->
     <meta property="og:title" content="مدماك الجنوب للمقاولات | Medmak Aljanub For Contracting">
-    <meta property="og:description" content="نفخر بتقديم أعلى معايير الجودة والأمان في تنفيذ مشاريع البنية التحتية والعمارة">
+    <meta property="og:description"
+        content="نفخر بتقديم أعلى معايير الجودة والأمان في تنفيذ مشاريع البنية التحتية والعمارة">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://medmak.sa/og-image.jpg">
-    
+
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.medmak.sa">
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/logo.png">
-    
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
+
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- NAVBAR -->
-<nav class="navbar">
-    <div class="container nav-container">
-        <!-- Mobile menu button first (will appear on the right in RTL) -->
-        <button class="mobile-menu-btn" id="mobileMenuBtn">
-            <i class="fas fa-bars" id="hamburgerIcon"></i>
-            <i class="fas fa-times" id="closeIcon" style="display: none;"></i>
-        </button>
-        
-        <!-- Logo second (will appear next to it) -->
-        <div class="logo">
-            <img src="images/1.png" alt="مدماك الجنوب للمقاولات" href="index.html">
-            <!-- <div class="logo-text">
+    <nav class="navbar">
+        <div class="container nav-container">
+            <!-- Mobile menu button first (will appear on the right in RTL) -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars" id="hamburgerIcon"></i>
+                <i class="fas fa-times" id="closeIcon" style="display: none;"></i>
+            </button>
+
+            <!-- Logo second (will appear next to it) -->
+            <div class="logo">
+                <img src="images/1.png" alt="مدماك الجنوب للمقاولات" href="index.html">
+                <!-- <div class="logo-text">
                 <div class="ar">مدماك الجنوب</div>
                 <div class="en">Medmak Aljanub For Contracting</div>
             </div> -->
+            </div>
+
+            <!-- Nav links remain last (will appear on the left in RTL) -->
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="active" data-i18n="home">الرئيسية</a>
+                <a href="#about" data-i18n="about">من نحن</a>
+                <a href="#services" data-i18n="services">خدماتنا</a>
+                <a href="#projects" data-i18n="projects">مشاريعنا</a>
+                <a href="#contact" data-i18n="contact">اتصل بنا</a>
+                <button class="lang-toggle" id="langToggle">English</button>
+            </div>
         </div>
-        
-        <!-- Nav links remain last (will appear on the left in RTL) -->
-        <div class="nav-links" id="navLinks">
-            <a href="#home" class="active" data-i18n="home">الرئيسية</a>
-            <a href="#about" data-i18n="about">من نحن</a>
-            <a href="#services" data-i18n="services">خدماتنا</a>
-            <a href="#projects" data-i18n="projects">مشاريعنا</a>
-            <a href="#contact" data-i18n="contact">اتصل بنا</a>
-            <button class="lang-toggle" id="langToggle">English</button>
-        </div>
-    </div>
-</nav>
+    </nav>
 
     <!-- HERO SECTION -->
     <section id="home" class="hero">
@@ -80,7 +86,16 @@
             <h2 class="animate-on-scroll" data-i18n="about_title">من نحن</h2>
             <div class="about-grid">
                 <div class="about-text animate-on-scroll">
-                    <p data-i18n="about_text">مؤسسة مدماك الجنوب للمقاولات، إحدى المؤسسات في مجال المقاولات العامة في المملكة العربية السعودية، تأسست الشركة على أسس قوية من الاحترافية والجودة والتميز في الأداء، مما جعلها تحظى بسمعة طيبة وثقة عملائها في السوق المحلية، وتتخصص مؤسسة مدماك الجنوب للمقاولات في تنفيذ مشاريع البنية التحتية والعمارة بأعلى معايير الجودة والأمان، وتتمتع بفريق عمل مؤهل ومدرب يتمتع بخبرة واسعة في مجال المقاولات، كما تقدم الشركة خدمات شاملة تشمل الإنشاءات العامة والصيانة والترميم والتجديد، بالإضافة إلى خدمات صيانة الطرق، كما تعتمد على أحدث التقنيات والمعدات في مجال البناء والصيانة، مما يضمن تنفيذ المشاريع بكفاءة وفاعلية عالية، وتلتزم المؤسسة بتقديم خدمات متكاملة ومواكبة لأحدث الاتجاهات والمعايير البيئية والأمنية، وبفضل سجلها الحافل بالنجاحات والإنجازات، تعتبر خياراً مثالياً للمشاريع الكبيرة والمعقدة في المملكة العربية السعودية، وتسعى دائمًا لتحقيق رضا العملاء وتقديم أفضل الخدمات بأعلى مستويات الجودة والاحترافية.</p>
+                    <p data-i18n="about_text">مؤسسة مدماك الجنوب للمقاولات، إحدى المؤسسات في مجال المقاولات العامة في
+                        المملكة العربية السعودية، تأسست الشركة على أسس قوية من الاحترافية والجودة والتميز في الأداء، مما
+                        جعلها تحظى بسمعة طيبة وثقة عملائها في السوق المحلية، وتتخصص مؤسسة مدماك الجنوب للمقاولات في
+                        تنفيذ مشاريع البنية التحتية والعمارة بأعلى معايير الجودة والأمان، وتتمتع بفريق عمل مؤهل ومدرب
+                        يتمتع بخبرة واسعة في مجال المقاولات، كما تقدم الشركة خدمات شاملة تشمل الإنشاءات العامة والصيانة
+                        والترميم والتجديد، بالإضافة إلى خدمات صيانة الطرق، كما تعتمد على أحدث التقنيات والمعدات في مجال
+                        البناء والصيانة، مما يضمن تنفيذ المشاريع بكفاءة وفاعلية عالية، وتلتزم المؤسسة بتقديم خدمات
+                        متكاملة ومواكبة لأحدث الاتجاهات والمعايير البيئية والأمنية، وبفضل سجلها الحافل بالنجاحات
+                        والإنجازات، تعتبر خياراً مثالياً للمشاريع الكبيرة والمعقدة في المملكة العربية السعودية، وتسعى
+                        دائمًا لتحقيق رضا العملاء وتقديم أفضل الخدمات بأعلى مستويات الجودة والاحترافية.</p>
                     <a href="#services" class="btn btn-outline" data-i18n="about_btn">استكشف خدماتنا</a>
                 </div>
                 <!-- <div class="stats-box animate-on-scroll">
@@ -109,12 +124,16 @@
                 <div class="vm-card animate-on-scroll">
                     <div class="vm-icon"><i class="fas fa-eye"></i></div>
                     <h3 data-i18n="vision_title">رؤيتنا</h3>
-                    <p data-i18n="vision_text">نتطلع إلى تحقيق مكانة رائدة محليًا وعالميًا في مجال المقاولات العامة، من خلال تقديم حلول مبتكرة ومستدامة تساهم في تطوير ورفع مستوى البنية التحتية والعمران في البلاد، بما يتوافق مع رؤية المملكة العربية السعودية 2030.</p>
+                    <p data-i18n="vision_text">نتطلع إلى تحقيق مكانة رائدة محليًا وعالميًا في مجال المقاولات العامة، من
+                        خلال تقديم حلول مبتكرة ومستدامة تساهم في تطوير ورفع مستوى البنية التحتية والعمران في البلاد، بما
+                        يتوافق مع رؤية المملكة العربية السعودية 2030.</p>
                 </div>
                 <div class="vm-card animate-on-scroll">
                     <div class="vm-icon"><i class="fas fa-bullseye"></i></div>
                     <h3 data-i18n="mission_title">رسالتنا</h3>
-                    <p data-i18n="mission_text">نسعى إلى تحقيق رضا العملاء وكسب ثقتهم وتحقيق أهدافهم وتلبية تطلعاتهم، من خلال الاستثمار في تطوير وتدريب الكفاءات البشرية لدينا لتعزيز قدراتنا التنافسية وتحسين أداء العمل لتقديم قيمة فعالة لعملائنا وشركائنا.</p>
+                    <p data-i18n="mission_text">نسعى إلى تحقيق رضا العملاء وكسب ثقتهم وتحقيق أهدافهم وتلبية تطلعاتهم، من
+                        خلال الاستثمار في تطوير وتدريب الكفاءات البشرية لدينا لتعزيز قدراتنا التنافسية وتحسين أداء العمل
+                        لتقديم قيمة فعالة لعملائنا وشركائنا.</p>
                 </div>
             </div>
         </div>
@@ -157,7 +176,7 @@
                         <li><i class="fas fa-check-circle"></i> تحسين العزل الحراري والصوتي</li>
                         <li><i class="fas fa-check-circle"></i> إعادة تصميم المساحات الداخلية</li>
                     </ul>
-                </div> 
+                </div>
                 <div class="service-item animate-on-scroll">
                     <div class="service-icon"><i class="fas fa-key"></i></div>
                     <h3 data-i18n="service4_title">تسليم مفتاح حسب الطلب</h3>
@@ -166,7 +185,7 @@
                         <li><i class="fas fa-check-circle"></i> إصلاح الحفر والتشققات</li>
                         <li><i class="fas fa-check-circle"></i> صيانة الأرصفة والممرات</li>
                         <li><i class="fas fa-check-circle"></i> تحسين نظام تصريف المياه</li>
-                        <li><i class="fas fa-check-circle"></i> صيانة الإشارات  والعلامات المرورية</li>
+                        <li><i class="fas fa-check-circle"></i> صيانة الإشارات والعلامات المرورية</li>
                     </ul>
                 </div>
                 <div class="service-item animate-on-scroll">
@@ -180,68 +199,69 @@
                         <li><i class="fas fa-check-circle"></i> دعم ما بعد البيع</li>
                     </ul>
                 </div>
-            <div class="service-item animate-on-scroll">
+                <div class="service-item animate-on-scroll">
                     <div class="service-icon"><i class="fas fa-cogs"></i></div>
                     <h3 data-i18n="service6_title">خدمات اضافية </h3>
-                    <p data-i18n="service6_desc">تقديم الاستشارات الفنية والإدارية لدعم المشاريع وتحسين أدائها وضمان استدامتها على المدى الطويل</p>
-                    </div>  
+                    <p data-i18n="service6_desc">تقديم الاستشارات الفنية والإدارية لدعم المشاريع وتحسين أدائها وضمان
+                        استدامتها على المدى الطويل</p>
+                </div>
             </div>
         </div>
     </section>
 
-   <!-- PROJECTS SECTION -->
-<section id="projects" class="section-padding">
-    <div class="container">
-        <h2 class="animate-on-scroll" data-i18n="projects_title">مشاريعنا</h2>
-        
-        <div class="projects-grid animate-on-scroll">
-            <!-- Project Item 1 - ترميم منزل تراثي - الدرعية -->
-            <div class="project-item" onclick="openProjectModal(1)">
-                <img src="images/project1.jpg" alt="ترميم منزل تراثي - الدرعية" loading="lazy">
-                <div class="project-caption">
-                    <h3>ترميم منزل تراثي - الدرعية</h3>
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <h2 class="animate-on-scroll" data-i18n="projects_title">مشاريعنا</h2>
+
+            <div class="projects-grid animate-on-scroll">
+                <!-- Project Item 1 - ترميم منزل تراثي - الدرعية -->
+                <div class="project-item" onclick="openProjectModal(1)">
+                    <img src="images/project1.jpg" alt="ترميم منزل تراثي - الدرعية" loading="lazy">
+                    <div class="project-caption">
+                        <h3>ترميم منزل تراثي - الدرعية</h3>
+                    </div>
                 </div>
-            </div>
-            
-            <!-- Project Item 2 - مشروع تشغيلات فاخرة - الخير -->
-            <div class="project-item" onclick="openProjectModal(2)">
-                <img src="images/project2.jpeg" alt="مشروع تشغيلات فاخرة - الخير" loading="lazy">
-                <div class="project-caption">
-                    <h3>مشروع تشغيلات فاخرة - الخير</h3>
+
+                <!-- Project Item 2 - مشروع تشغيلات فاخرة - الخير -->
+                <div class="project-item" onclick="openProjectModal(2)">
+                    <img src="images/project2.jpeg" alt="مشروع تشغيلات فاخرة - الخير" loading="lazy">
+                    <div class="project-caption">
+                        <h3>مشروع تشغيلات فاخرة - الخير</h3>
+                    </div>
                 </div>
-            </div>
-            
-            <!-- Project Item 3 - مشروع تطبيبات داخلية -->
-            <div class="project-item" onclick="openProjectModal(3)">
-                <img src="images/project3.jpg" alt="مشروع تطبيبات داخلية" loading="lazy">
-                <div class="project-caption">
-                    <h3>مشروع تطبيبات داخلية</h3>
+
+                <!-- Project Item 3 - مشروع تطبيبات داخلية -->
+                <div class="project-item" onclick="openProjectModal(3)">
+                    <img src="images/project3.jpg" alt="مشروع تطبيبات داخلية" loading="lazy">
+                    <div class="project-caption">
+                        <h3>مشروع تطبيبات داخلية</h3>
+                    </div>
                 </div>
-            </div>
-            
-            <!-- Project Item 4 - مشروع بناء فيلا -->
-            <div class="project-item" onclick="openProjectModal(4)">
-                <img src="images/project4.jpg" alt="مشروع بناء فيلا" loading="lazy">
-                <div class="project-caption">
-                    <h3>مشروع بناء فيلا</h3>
+
+                <!-- Project Item 4 - مشروع بناء فيلا -->
+                <div class="project-item" onclick="openProjectModal(4)">
+                    <img src="images/project4.jpg" alt="مشروع بناء فيلا" loading="lazy">
+                    <div class="project-caption">
+                        <h3>مشروع بناء فيلا</h3>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Project Modal (for viewing images) -->
-<div id="projectModal" class="modal" onclick="closeModal()">
-    <span class="modal-close">&times;</span>
-    <div class="modal-content" onclick="event.stopPropagation()">
-        <img id="modalImage" src="" alt="Project Image">
-        <div id="modalCaption" class="modal-caption"></div>
-        
-        <!-- Navigation Buttons -->
-        <button class="modal-prev" onclick="changeImage(-1)">&#10094;</button>
-        <button class="modal-next" onclick="changeImage(1)">&#10095;</button>
+    <!-- Project Modal (for viewing images) -->
+    <div id="projectModal" class="modal" onclick="closeModal()">
+        <span class="modal-close">&times;</span>
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <img id="modalImage" src="" alt="Project Image">
+            <div id="modalCaption" class="modal-caption"></div>
+
+            <!-- Navigation Buttons -->
+            <button class="modal-prev" onclick="changeImage(-1)">&#10094;</button>
+            <button class="modal-next" onclick="changeImage(1)">&#10095;</button>
+        </div>
     </div>
-</div>
 
     <!-- CONTACT SECTION -->
     <section id="contact" class="section-padding contact-section">
@@ -262,10 +282,12 @@
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-                        <a href="https://maps.app.goo.gl/UMhDyWmovNTVs1FUA" target="_blank" data-i18n="map_link">الموقع على الخريطة</a>
+                        <a href="https://maps.app.goo.gl/UMhDyWmovNTVs1FUA" target="_blank" data-i18n="map_link">الموقع
+                            على الخريطة</a>
                     </div>
                     <div class="social-links">
-                        <a href="https://instagram.com/Medmakaljanub" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://instagram.com/Medmakaljanub" target="_blank" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
                         <a href="#" target="_blank" aria-label="X (Twitter)"><i class="fab fa-x"></i></a>
                         <a href="#" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
                         <a href="#" target="_blank" aria-label="Snapchat"><i class="fab fa-snapchat"></i></a>
@@ -273,7 +295,10 @@
                     </div>
                 </div>
                 <div class="map-placeholder animate-on-scroll">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.772812138128!2d46.6753!3d24.7136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d48999f%3A0x9b8e8f8b8f8b8f8b!2sRiyadh!5e0!3m2!1sen!2ssa!4v1234567890" allowfullscreen="" loading="lazy" title="موقع الشركة على الخريطة"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d457620.50165654137!2d49.4481235!3d26.353681!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49e3005c4fb401%3A0x7f2b903e28d46bc5!2z2YXYpNiz2LPYqSDZhdiv2YXYp9mDINin2YTYrNmG2YjYqCDZhNmE2YXZgtin2YjZhNin2Ko!5e0!3m2!1sen!2snp!4v1772622564604!5m2!1sen!2snp"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>

@@ -34,35 +34,33 @@
 </head>
 <body>
     <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="container nav-container">
-            <div class="logo">
-                <img src="Logo.png" alt="مدماك الجنوب للمقاولات">
-                <!-- <div class="logo-symbol">
-                    <div class="building">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div> -->
-                <div class="logo-text">
-                    <div class="ar">مدماك الجنوب</div>
-                    <div class="en">Medmak Aljanub For Contracting</div>
-                </div>
-            </div>
-            <div class="nav-links" id="navLinks">
-                <button class="mobile-menu-btn" id="mobileMenuBtn">
-        <i class="fas fa-bars" id="hamburgerIcon"></i>
-        <i class="fas fa-times" id="closeIcon" style="display: none;"></i>
-    </button>
-                <a href="#home" class="active" data-i18n="home">الرئيسية</a>
-                <a href="#about" data-i18n="about">من نحن</a>
-                <a href="#services" data-i18n="services">خدماتنا</a>
-                <a href="#contact" data-i18n="contact">اتصل بنا</a>
-                <button class="lang-toggle" id="langToggle">English</button>
+<nav class="navbar">
+    <div class="container nav-container">
+        <!-- Mobile menu button first (will appear on the right in RTL) -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars" id="hamburgerIcon"></i>
+            <i class="fas fa-times" id="closeIcon" style="display: none;"></i>
+        </button>
+        
+        <!-- Logo second (will appear next to it) -->
+        <div class="logo">
+            <img src="Logo.png" alt="مدماك الجنوب للمقاولات">
+            <div class="logo-text">
+                <div class="ar">مدماك الجنوب</div>
+                <div class="en">Medmak Aljanub For Contracting</div>
             </div>
         </div>
-    </nav>
+        
+        <!-- Nav links remain last (will appear on the left in RTL) -->
+        <div class="nav-links" id="navLinks">
+            <a href="#home" class="active" data-i18n="home">الرئيسية</a>
+            <a href="#about" data-i18n="about">من نحن</a>
+            <a href="#services" data-i18n="services">خدماتنا</a>
+            <a href="#contact" data-i18n="contact">اتصل بنا</a>
+            <button class="lang-toggle" id="langToggle">English</button>
+        </div>
+    </div>
+</nav>
 
     <!-- HERO SECTION -->
     <section id="home" class="hero">

@@ -172,7 +172,7 @@ h2:after {
 /* For mobile devices */
 @media (max-width: 768px) {
     .logo img {
-        height: 45px;
+        height: 50px;
         /* Smaller on mobile */
     }
 }

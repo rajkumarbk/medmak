@@ -14,13 +14,14 @@ const translations = {
         home: "الرئيسية",
         about: "من نحن",
         services: "خدماتنا",
+        projects: "مشاريعنا",
         contact: "اتصل بنا",
         hero_sub: "مقاولات عامة • رؤية 2030",
         hero_title: "مدماك الجنوب <br>للمقاولات",
         hero_desc: "نفخر بتقديم أعلى معايير الجودة والأمان في تنفيذ مشاريع البنية التحتية والعمارة",
         hero_btn: "اطلب استشارة مجانية",
-        about_title: "من نحن",
-        about_text: "مؤسسة مدماك الجنوب للمقاولات، إحدى المؤسسات الرائدة في مجال المقاولات العامة في المملكة العربية السعودية، تأسست على أسس قوية من الاحترافية والجودة والتميز في الأداء، مما جعلها تحظى بسمعة طيبة وثقة عملائها في السوق المحلية. تتخصص في تنفيذ مشاريع البنية التحتية والعمارة بأعلى معايير الجودة والأمان، وتتمتع بفريق عمل مؤهل ومدرب يتمتع بخبرة واسعة، كما تقدم خدمات شاملة تشمل الإنشاءات العامة والصيانة والترميم والتجديد، بالإضافة إلى خدمات صيانة الطرق، وتعتمد على أحدث التقنيات والمعدات.",
+        about_title: "رؤية واضحة.. تصميم مبتكر.. تنفيذ بدقة ",
+        about_text: "مؤسسة مدماك الجنوب للمقاولات، إحدى المؤسسات في مجال المقاولات العامة في المملكة العربية السعودية، تأسست الشركة على أسس قوية من الاحترافية والجودة والتميز في الأداء، مما جعلها تحظى بسمعة طيبة وثقة عملائها في السوق المحلية، وتتخصص مؤسسة مدماك الجنوب للمقاولات في تنفيذ مشاريع البنية التحتية والعمارة بأعلى معايير الجودة والأمان، وتتمتع بفريق عمل مؤهل ومدرب يتمتع بخبرة واسعة في مجال المقاولات، كما تقدم الشركة خدمات شاملة تشمل الإنشاءات العامة والصيانة والترميم والتجديد، بالإضافة إلى خدمات صيانة الطرق، كما تعتمد على أحدث التقنيات والمعدات في مجال البناء والصيانة، مما يضمن تنفيذ المشاريع بكفاءة وفاعلية عالية، وتلتزم المؤسسة بتقديم خدمات متكاملة ومواكبة لأحدث الاتجاهات والمعايير البيئية والأمنية، وبفضل سجلها الحافل بالنجاحات والإنجازات، تعتبر خياراً مثالياً للمشاريع الكبيرة والمعقدة في المملكة العربية السعودية، وتسعى دائمًا لتحقيق رضا العملاء وتقديم أفضل الخدمات بأعلى مستويات الجودة والاحترافية.",
         about_btn: "استكشف خدماتنا",
         stat1: "عاماً من الخبرة",
         stat2: "مشروع مكتمل",
@@ -31,19 +32,25 @@ const translations = {
         mission_title: "رسالتنا",
         mission_text: "نسعى إلى تحقيق رضا العملاء وكسب ثقتهم وتحقيق أهدافهم وتلبية تطلعاتهم، من خلال الاستثمار في تطوير وتدريب الكفاءات البشرية لدينا لتعزيز قدراتنا التنافسية وتحسين أداء العمل لتقديم قيمة فعالة لعملائنا وشركائنا.",
         services_title: "خدماتنا",
-        service1_title: "بناء وترميم",
-        service2_title: "صيانة الطرق",
+        service1_title: "الإنشاء والبناء",
+        service2_title: "الصيانة والترميم",
         service2_desc: "صيانة وتأهيل الطرق بأساليب حديثة تضمن السلامة والاستدامة.",
-        service3_title: "تشطيبات داخلية",
+        service3_title: "التشطيبات الداخلية والخارجية",
         service3_desc: "تشطيبات فاخرة بأعلى المقاييس، من الأرضيات إلى الدهانات والأسقف.",
+        services4_title: "تسليم مفتاح حسب الطلب",
+        services4_desc: "تعبيد وصيانة الطرق، إصلاح الحفر والتشققات، صيانة الأرصفة، تحسين تصريف المياه، وصيانة الإشارات المرورية.",
+        services5_title: "صيانة الطرق",
+        services5_desc: "حلول شاملة من التصميم إلى التنفيذ والصيانة مع ضمان رضا العملاء ودعم ما بعد البيع.",
+        projects_title: "مشاريعنا",
         contact_title: "اتصل بنا",
         map_link: "الموقع على الخريطة",
-        footer: "© 2026 مدماك الجنوب للمقاولات - جميع الحقوق محفوظة. تصميم يعكس هوية الإتقان والقوة."
+        footer: "© 2026 مدماك الجنوب للمقاولات - جميع الحقوق محفوظة."
     },
     en: {
         home: "Home",
         about: "About",
         services: "Services",
+        projects: "Projects",
         contact: "Contact",
         hero_sub: "GENERAL CONTRACTING · VISION 2030",
         hero_title: "Medmak Aljanub <br>for Contracting",
@@ -66,9 +73,10 @@ const translations = {
         service2_desc: "Maintenance and rehabilitation of roads using modern methods ensuring safety and sustainability.",
         service3_title: "Interior Finishing",
         service3_desc: "Luxury finishes to the highest standards, from flooring to paints and ceilings.",
+        projects_title: "Our Projects",
         contact_title: "Contact Us",
         map_link: "Location on Map",
-        footer: "© 2026 Medmak Aljanub for Contracting - All rights reserved. Design reflecting the identity of precision and strength."
+        footer: "© 2026 Medmak Aljanub for Contracting - All rights reserved."
     }
 };
 
@@ -91,27 +99,116 @@ function setLanguage(lang) {
         }
     });
 
-    // Update service1 list manually (since it doesn't use data-i18n)
+    // Update service lists
     const service1List = document.getElementById('service1List');
     if (service1List) {
         if (lang === 'ar') {
             service1List.innerHTML = `
-                <li><i class="fas fa-check-circle"></i> تنفيذ الهيكل الإنشائي</li>
-                <li><i class="fas fa-check-circle"></i> صب الخرسانة المسلحة</li>
-                <li><i class="fas fa-check-circle"></i> تأسيس الكهرباء والسباكة</li>
-                <li><i class="fas fa-check-circle"></i> بناء الأسوار والغرف الخارجية</li>
-                <li><i class="fas fa-check-circle"></i> تسليم مفتاح حسب الطلب</li>
-            `;
+            <li><i class="fas fa-check-circle"></i> تنفيذ الهيكل الإنشائي وصب الخرسانة</li>
+            <li><i class="fas fa-check-circle"></i> تنفيذ أعمال العزل المائي والحراري</li>
+            <li><i class="fas fa-check-circle"></i> تأسيس الكهرباء والسباكة</li>
+            <li><i class="fas fa-check-circle"></i> بناء الأسوار والملاحق</li>
+            <li><i class="fas fa-check-circle"></i> الالتزام بكود البناء السعودي</li>
+        `;
         } else {
             service1List.innerHTML = `
-                <li><i class="fas fa-check-circle"></i> Structural framework</li>
-                <li><i class="fas fa-check-circle"></i> Reinforced concrete</li>
-                <li><i class="fas fa-check-circle"></i> Electrical & plumbing</li>
-                <li><i class="fas fa-check-circle"></i> Fences & external rooms</li>
-                <li><i class="fas fa-check-circle"></i> Turnkey delivery</li>
-            `;
+            <li><i class="fas fa-check-circle"></i> Structural framework</li>
+            <li><i class="fas fa-check-circle"></i> Reinforced concrete</li>
+            <li><i class="fas fa-check-circle"></i> Electrical & plumbing</li>
+            <li><i class="fas fa-check-circle"></i> Fences & external rooms</li>
+            <li><i class="fas fa-check-circle"></i> Turnkey delivery</li>
+        `;
         }
     }
+
+    const service2List = document.getElementById('service2List');
+    if (service2List) {
+        if (lang === 'ar') {
+            service2List.innerHTML = `
+            <li><i class="fas fa-check-circle"></i> ترميم وإعادة تأهيل المباني</li>
+            <li><i class="fas fa-check-circle"></i> أعمال الأرضيات والدهانات</li>
+            <li><i class="fas fa-check-circle"></i> صيانة الأعمال الكهربائية والميكانيكية</li>
+            <li><i class="fas fa-check-circle"></i> معالجة التشققات والتلفيات الإنشائية</li>
+            <li><i class="fas fa-check-circle"></i> حلول صيانة وقائية وعلاجية</li>
+        `;
+        } else {
+            service2List.innerHTML = `
+            <li><i class="fas fa-check-circle"></i> Gypsum board works</li>
+            <li><i class="fas fa-check-circle"></i> Ceramic and porcelain installation</li>
+            <li><i class="fas fa-check-circle"></i> Painting and plastering</li>
+            <li><i class="fas fa-check-circle"></i> Doors and windows installation</li>
+            <li><i class="fas fa-check-circle"></i> Carpentry works</li>
+        `;
+        }
+    }
+
+    const service3List = document.getElementById('service3List');
+    if (service3List) {
+        if (lang === 'ar') {
+            service3List.innerHTML = `
+            <li><i class="fas fa-check-circle"></i> أعمال الدهانات الداخلية والخارجية</li>
+            <li><i class="fas fa-check-circle"></i> تنفيذ الجبس بورد والأسقف المستعارة</li>
+            <li><i class="fas fa-check-circle"></i> تركيب الأرضيات بمختلف أنواعها</li>
+            <li><i class="fas fa-check-circle"></i> الأعمال الخشبية والزجاجية</li>
+            <li><i class="fas fa-check-circle"></i> تنفيذ الديكورات والتأثيث</li>
+        `;
+        } else {
+            service3List.innerHTML = `
+            <li><i class="fas fa-check-circle"></i> Old building restoration</li>
+            <li><i class="fas fa-check-circle"></i> Exterior facade renovation</li>
+            <li><i class="fas fa-check-circle"></i> Electrical and plumbing updates</li>
+            <li><i class="fas fa-check-circle"></i> Thermal and sound insulation</li>
+            <li><i class="fas fa-check-circle"></i> Interior space redesign</li>
+        `;
+        }
+    }
+
+    const service4List = document.getElementById('service4List');
+    if (service4List) {
+        if (lang === 'ar') {
+            service4List.innerHTML = `
+            <li><i class="fas fa-check-circle"></i> أعمال السفلتة وإعادة التأهيل</li>
+            <li><i class="fas fa-check-circle"></i> معالجة الحفر والتشققات</li>
+            <li><i class="fas fa-check-circle"></i> إعادة تخطيط الطرق</li>
+            <li><i class="fas fa-check-circle"></i> صيانة الأرصفة والبردورات</li>
+            <li><i class="fas fa-check-circle"></i> تحسين كفاءة البنية التحتية</li>
+        `;
+        } else {
+            service4List.innerHTML = `
+            <li><i class="fas fa-check-circle"></i> Design</li>
+            <li><i class="fas fa-check-circle"></i> Execution</li>
+            <li><i class="fas fa-check-circle"></i> Maintenance</li>
+            <li><i class="fas fa-check-circle"></i> Customer satisfaction</li>
+            <li><i class="fas fa-check-circle"></i> After-sales support</li>
+        `;
+        }
+    }
+
+    const service5List = document.getElementById('service5List');
+    if (service5List) {
+        if (lang === 'ar') {
+            service5List.innerHTML = `
+            <li><i class="fas fa-check-circle"></i> إعداد المخططات والتصاميم الهندسية</li>
+            <li><i class="fas fa-check-circle"></i> استخراج التصاريح اللازمة</li>
+            <li><i class="fas fa-check-circle"></i> تنفيذ كامل أعمال البناء والتشطيب</li>
+            <li><i class="fas fa-check-circle"></i> الإشراف وإدارة المشروع</li>
+            <li><i class="fas fa-check-circle"></i> تسليم نهائي جاهز للاستخدام</li>
+            
+        `;
+        } else {
+            service5List.innerHTML = `
+        <li><i class="fas fa-check-circle"></i> Road paving and maintenance</li>
+            <li><i class="fas fa-check-circle"></i> Pothole and crack repair</li>
+            <li><i class="fas fa-check-circle"></i> Sidewalk and pathway maintenance</li>
+            <li><i class="fas fa-check-circle"></i> Water drainage improvement</li>
+            <li><i class="fas fa-check-circle"></i> Traffic signs and markings</li>
+            
+        `;
+        }
+    }
+
+    // Update project captions
+    updateProjectCaptions();
 }
 // ** ADD THIS EVENT LISTENER **
 langToggleBtn.addEventListener('click', () => {
@@ -178,16 +275,16 @@ if (mobileBtn && navLinks) {
     function isMobileView() {
         return window.innerWidth <= 992;
     }
-    
+
     // Function to check if mobile menu is open
     function isMobileMenuOpen() {
         return navLinks.style.display === 'flex' && isMobileView();
     }
-    
+
     // Function to open mobile menu
     function openMobileMenu() {
         if (!isMobileView()) return;
-        
+
         navLinks.style.display = 'flex';
         navLinks.style.flexDirection = 'column';
         navLinks.style.position = 'absolute';
@@ -199,35 +296,35 @@ if (mobileBtn && navLinks) {
         navLinks.style.boxShadow = 'var(--shadow)';
         navLinks.style.width = '200px';
         navLinks.style.zIndex = '1000';
-        
+
         // Toggle icons
         hamburgerIcon.style.display = 'none';
         closeIcon.style.display = 'inline-block';
     }
-    
+
     // Function to close mobile menu
     function closeMobileMenu() {
         if (!isMobileView()) return;
-        
+
         navLinks.style.display = 'none';
-        
+
         // Toggle icons
         hamburgerIcon.style.display = 'inline-block';
         closeIcon.style.display = 'none';
     }
-    
+
     // Toggle menu on button click
     mobileBtn.addEventListener('click', (e) => {
         e.stopPropagation();
         if (!isMobileView()) return;
-        
+
         if (navLinks.style.display === 'flex') {
             closeMobileMenu();
         } else {
             openMobileMenu();
         }
     });
-    
+
     // Close menu when clicking on a link
     navLinks.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
@@ -236,21 +333,21 @@ if (mobileBtn && navLinks) {
             }
         });
     });
-    
+
     // Close menu when clicking outside - ONLY when menu is open on mobile
     document.addEventListener('click', (e) => {
         // Only close if:
         // 1. We're on mobile view
         // 2. The mobile menu is currently open
         // 3. The click is outside the menu and the menu button
-        if (isMobileView() && 
-            isMobileMenuOpen() && 
-            !navLinks.contains(e.target) && 
+        if (isMobileView() &&
+            isMobileMenuOpen() &&
+            !navLinks.contains(e.target) &&
             !mobileBtn.contains(e.target)) {
             closeMobileMenu();
         }
     });
-    
+
     // Handle window resize
     window.addEventListener('resize', () => {
         if (!isMobileView()) {
@@ -264,7 +361,7 @@ if (mobileBtn && navLinks) {
             navLinks.style.width = 'auto';
             navLinks.style.right = 'auto';
             navLinks.style.top = 'auto';
-            
+
             // Hide both icons on desktop
             hamburgerIcon.style.display = 'none';
             closeIcon.style.display = 'none';
@@ -275,7 +372,7 @@ if (mobileBtn && navLinks) {
             closeIcon.style.display = 'none';
         }
     });
-    
+
     // Initial setup based on screen size
     if (!isMobileView()) {
         // Desktop
@@ -286,7 +383,7 @@ if (mobileBtn && navLinks) {
         navLinks.style.padding = '0';
         navLinks.style.boxShadow = 'none';
         navLinks.style.width = 'auto';
-        
+
         hamburgerIcon.style.display = 'none';
         closeIcon.style.display = 'none';
     } else {
@@ -304,9 +401,9 @@ setLanguage('ar');
 window.addEventListener('scroll', () => {
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.nav-links a');
-    
+
     let current = '';
-    
+
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
@@ -314,7 +411,7 @@ window.addEventListener('scroll', () => {
             current = section.getAttribute('id');
         }
     });
-    
+
     navLinks.forEach(link => {
         link.classList.remove('active');
         if (link.getAttribute('href') === `#${current}`) {
@@ -322,3 +419,137 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
+// ===== PROJECTS MODAL =====
+// Project data - store your projects here
+const projects = [
+    {
+        id: 1,
+        image: "images/project1.jpg",
+        caption: {
+            ar: "فيلا سكنية - الرياض",
+            en: "Luxury Villa - Riyadh"
+        }
+    },
+    {
+        id: 2,
+        image: "images/project2.jpeg",
+        caption: {
+            ar: "صيانة طريق الملك فهد",
+            en: "King Fahd Road Maintenance"
+        }
+    },
+    {
+        id: 3,
+        image: "images/project3.jpg",
+        caption: {
+            ar: "تشطيبات فاخرة - الخبر",
+            en: "Luxury Finishing - Al Khobar"
+        }
+    },
+    {
+        id: 4,
+        image: "images/project4.jpg",
+        caption: {
+            ar: "ترميم منزل تراثي - الدرعية",
+            en: "Heritage House Renovation - Diriyah"
+        }
+    }
+    // Add more projects as needed
+];
+
+let currentProjectIndex = 0;
+
+// Function to open modal
+function openProjectModal(projectId) {
+    const modal = document.getElementById('projectModal');
+    const modalImg = document.getElementById('modalImage');
+    const modalCaption = document.getElementById('modalCaption');
+
+    // Find the project
+    const index = projects.findIndex(p => p.id === projectId);
+    if (index === -1) return;
+
+    currentProjectIndex = index;
+    const project = projects[index];
+    const currentLang = document.documentElement.lang || 'ar';
+
+    modalImg.src = project.image;
+    modalCaption.textContent = project.caption[currentLang];
+
+    modal.style.display = 'block';
+    document.body.style.overflow = 'hidden'; // Prevent scrolling
+}
+
+// Function to close modal
+function closeModal() {
+    const modal = document.getElementById('projectModal');
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto'; // Restore scrolling
+}
+
+// Function to change image (next/previous)
+function changeImage(direction) {
+    const modalImg = document.getElementById('modalImage');
+    const modalCaption = document.getElementById('modalCaption');
+    const currentLang = document.documentElement.lang || 'ar';
+
+    currentProjectIndex += direction;
+
+    // Loop around
+    if (currentProjectIndex >= projects.length) {
+        currentProjectIndex = 0;
+    } else if (currentProjectIndex < 0) {
+        currentProjectIndex = projects.length - 1;
+    }
+
+    const project = projects[currentProjectIndex];
+    modalImg.src = project.image;
+    modalCaption.textContent = project.caption[currentLang];
+}
+
+// Close modal with ESC key
+document.addEventListener('keydown', function (e) {
+    const modal = document.getElementById('projectModal');
+    if (modal.style.display === 'block') {
+        if (e.key === 'Escape') {
+            closeModal();
+        } else if (e.key === 'ArrowLeft') {
+            // RTL adjustment
+            if (document.documentElement.dir === 'rtl') {
+                changeImage(1);
+            } else {
+                changeImage(-1);
+            }
+        } else if (e.key === 'ArrowRight') {
+            // RTL adjustment
+            if (document.documentElement.dir === 'rtl') {
+                changeImage(-1);
+            } else {
+                changeImage(1);
+            }
+        }
+    }
+});
+
+// Update captions when language changes
+// Add this inside your setLanguage function
+// After updating other elements, add:
+function updateProjectCaptions() {
+    const currentLang = document.documentElement.lang || 'ar';
+    const projectCaptions = document.querySelectorAll('.project-caption h3');
+
+    // Update grid captions if they have data attributes
+    document.querySelectorAll('.project-item').forEach((item, index) => {
+        if (projects[index]) {
+            const caption = item.querySelector('.project-caption h3');
+            if (caption) {
+                caption.textContent = projects[index].caption[currentLang];
+            }
+        }
+    });
+}
+
+// Call this in your setLanguage function
+// Add this line inside setLanguage after updating other elements:
+// updateProjectCaptions();

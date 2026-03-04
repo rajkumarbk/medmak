@@ -23,6 +23,9 @@ body {
     overflow-x: hidden;
     position: relative;
     z-index: 1;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 1000vw;
 }
 
 /* ===== BACKGROUND PATTERN ===== */
@@ -44,10 +47,10 @@ body::before {
 }
 
 .container {
-    width: 90%;
+    width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 15px;
 }
 
 /* ===== TYPOGRAPHY ===== */
@@ -174,6 +177,28 @@ h2:after {
     .logo img {
         height: 50px;
         /* Smaller on mobile */
+    }
+    .container {
+        padding: 0 10px;  /* Reduce padding more for mobile */
+    }
+    
+    .section-padding {
+        padding: 40px 0;  /* Reduce top/bottom spacing */
+    }
+    
+    .hero-content {
+        padding: 0 10px;  /* Add padding to hero */
+    }
+    .nav-container {
+        padding: 0 5px;  /* Reduce navbar padding */
+    }
+    
+    .logo img {
+        height: 40px;  /* Smaller logo */
+    }
+    
+    .vision-img {
+        height: 30px;  /* Smaller vision 2030 logo */
     }
 }
 

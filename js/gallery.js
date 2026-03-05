@@ -2,20 +2,20 @@
   'use strict';
 
   /* ── DOM References ─────────────────────────────────── */
-  const grid        = document.getElementById('galleryGrid');
-  const lightbox    = document.getElementById('lightbox');
-  const backdrop    = document.getElementById('lightboxBackdrop');
-  const imgEl       = document.getElementById('lightboxImg');
-  const caption     = document.getElementById('lightboxCaption');
-  const counter     = document.getElementById('lightboxCounter');
-  const btnClose    = document.getElementById('lightboxClose');
-  const btnPrev     = document.getElementById('lightboxPrev');
-  const btnNext     = document.getElementById('lightboxNext');
+  const grid = document.getElementById('galleryGrid');
+  const lightbox = document.getElementById('lightbox');
+  const backdrop = document.getElementById('lightboxBackdrop');
+  const imgEl = document.getElementById('lightboxImg');
+  const caption = document.getElementById('lightboxCaption');
+  const counter = document.getElementById('lightboxCounter');
+  const btnClose = document.getElementById('lightboxClose');
+  const btnPrev = document.getElementById('lightboxPrev');
+  const btnNext = document.getElementById('lightboxNext');
 
   /* ── State ──────────────────────────────────────────── */
-  let items        = [];   // Array of { src, alt } objects
+  let items = [];   // Array of { src, alt } objects
   let currentIndex = 0;
-  let isOpen       = false;
+  let isOpen = false;
 
   /* ── Build items list from DOM ──────────────────────── */
   function buildItems() {
@@ -74,10 +74,10 @@
   }
 
   function setImage(item, index) {
-    imgEl.src    = item.src;
-    imgEl.alt    = item.alt;
+    imgEl.src = item.src;
+    imgEl.alt = item.alt;
     caption.textContent = item.caption || '';
-    counter.textContent = `${index + 1} / ${items.length}`;
+    counter.textContent = `${items.length} / ${index + 1}`;
     updateNavVisibility();
   }
 
@@ -97,8 +97,8 @@
   }
 
   function updateNavVisibility() {
-    btnPrev.style.visibility = currentIndex === 0               ? 'hidden' : 'visible';
     btnNext.style.visibility = currentIndex === items.length - 1 ? 'hidden' : 'visible';
+    btnPrev.style.visibility = currentIndex === 0 ? 'hidden' : 'visible';
   }
 
   /* ── Event: Click gallery items ─────────────────────── */
@@ -126,9 +126,9 @@
   document.addEventListener('keydown', (e) => {
     if (!isOpen) return;
     switch (e.key) {
-      case 'Escape':    closeLightbox(); break;
-      case 'ArrowLeft': showPrev();      break;
-      case 'ArrowRight':showNext();      break;
+      case 'Escape': closeLightbox(); break;
+      case 'ArrowLeft': showPrev(); break;
+      case 'ArrowRight': showNext(); break;
     }
   });
 
@@ -149,7 +149,7 @@
     // Only register horizontal swipes (not vertical scrolls)
     if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 50) {
       if (dx < 0) showNext();
-      else        showPrev();
+      else showPrev();
     }
   }, { passive: true });
 

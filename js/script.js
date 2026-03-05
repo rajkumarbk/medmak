@@ -394,7 +394,7 @@ if (mobileBtn && navLinks) {
 }
 
 // ==Set initial language==
-setLanguage('ar');
+// setLanguage('ar');
 
 // ==Add active class to nav links on scroll==
 window.addEventListener('scroll', () => {

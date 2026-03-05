@@ -36,6 +36,7 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallery.css">
 </head>
 
 <body>
@@ -57,8 +58,8 @@
             </div> -->
             </div>
             <div class="vision-logo">
-            <img src="images/vision2030.svg" alt="رؤية السعودية 2030" class="vision-img">
-        </div>
+                <img src="images/vision2030.svg" alt="رؤية السعودية 2030" class="vision-img">
+            </div>
 
             <!-- Nav links remain last (will appear on the left in RTL) -->
             <div class="nav-links" id="navLinks">
@@ -82,7 +83,7 @@
             <a href="#contact" class="btn" data-i18n="hero_btn">اطلب استشارة مجانية</a> -->
         </div>
     </section>
-
+    
     <!-- ABOUT SECTION -->
     <section id="about" class="section-padding">
         <div class="container">
@@ -99,23 +100,13 @@
                         متكاملة ومواكبة لأحدث الاتجاهات والمعايير البيئية والأمنية، وبفضل سجلها الحافل بالنجاحات
                         والإنجازات، تعتبر خياراً مثالياً للمشاريع الكبيرة والمعقدة في المملكة العربية السعودية، وتسعى
                         دائمًا لتحقيق رضا العملاء وتقديم أفضل الخدمات بأعلى مستويات الجودة والاحترافية.</p>
-                    <a href="#services" class="btn btn-outline" data-i18n="about_btn">استكشف خدماتنا</a>
+                        <a href="#services" class="btn btn-outline" data-i18n="about_btn">استكشف خدماتنا</a>
+                    </div>
+                    <div class="about-image animate-on-scroll">
+                        <img src="images/project1.jpg" alt="About Us" />
+                    </div>
                 </div>
-                <!-- <div class="stats-box animate-on-scroll">
-                    <div class="stat-item">
-                        <div class="stat-number">15+</div>
-                        <div class="stat-label" data-i18n="stat1">عاماً من الخبرة</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">200+</div>
-                        <div class="stat-label" data-i18n="stat2">مشروع مكتمل</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">100%</div>
-                        <div class="stat-label" data-i18n="stat3">التزام بالجودة</div>
-                    </div>
-                </div> -->
-            </div>
+        </div>
         </div>
     </section>
 
@@ -217,54 +208,81 @@
         <div class="container">
             <h2 class="animate-on-scroll" data-i18n="projects_title">مشاريعنا</h2>
 
-            <div class="projects-grid animate-on-scroll">
-                <!-- Project Item 1 - ترميم منزل تراثي - الدرعية -->
-                <div class="project-item" onclick="openProjectModal(1)">
-                    <img src="images/project1.jpg" alt="ترميم منزل تراثي - الدرعية" loading="lazy">
-                    <div class="project-caption">
-                        <h3>ترميم منزل تراثي - الدرعية</h3>
-                    </div>
+            <div class="gallery-grid" id="galleryGrid">
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800"
+                        alt="Mountain landscape" />
+                    <div class="overlay"><span>Mountains</span></div>
                 </div>
 
-                <!-- Project Item 2 - مشروع تشغيلات فاخرة - الخير -->
-                <div class="project-item" onclick="openProjectModal(2)">
-                    <img src="images/project2.jpeg" alt="مشروع تشغيلات فاخرة - الخير" loading="lazy">
-                    <div class="project-caption">
-                        <h3>مشروع تشغيلات فاخرة - الخير</h3>
-                    </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800" alt="Forest aerial" />
+                    <div class="overlay"><span>Forest</span></div>
                 </div>
 
-                <!-- Project Item 3 - مشروع تطبيبات داخلية -->
-                <div class="project-item" onclick="openProjectModal(3)">
-                    <img src="images/project3.jpg" alt="مشروع تطبيبات داخلية" loading="lazy">
-                    <div class="project-caption">
-                        <h3>مشروع تطبيبات داخلية</h3>
-                    </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=800" alt="Ocean sunset" />
+                    <div class="overlay"><span>Ocean</span></div>
                 </div>
 
-                <!-- Project Item 4 - مشروع بناء فيلا -->
-                <div class="project-item" onclick="openProjectModal(4)">
-                    <img src="images/project4.jpg" alt="مشروع بناء فيلا" loading="lazy">
-                    <div class="project-caption">
-                        <h3>مشروع بناء فيلا</h3>
-                    </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800" alt="Valley" />
+                    <div class="overlay"><span>Valley</span></div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=800" alt="Autumn trees" />
+                    <div class="overlay"><span>Autumn</span></div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=800" alt="Waterfall" />
+                    <div class="overlay"><span>Waterfall</span></div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800" alt="Rocky peaks" />
+                    <div class="overlay"><span>Peaks</span></div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?w=800"
+                        alt="Lake reflection" />
+                    <div class="overlay"><span>Lake</span></div>
                 </div>
             </div>
+            <!-- </main> -->
+
+            <!-- Lightbox -->
+            <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+                <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+
+                <button class="lightbox-nav prev" id="lightboxPrev" aria-label="Previous image">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <polyline points="9 18 15 12 9 6" />
+                    </svg>
+                </button>
+
+                <div class="lightbox-content">
+                    <img src="" alt="" id="lightboxImg" />
+                    <div class="lightbox-caption" id="lightboxCaption"></div>
+                    <div class="lightbox-counter" id="lightboxCounter"></div>
+                </div>
+
+                <button class="lightbox-nav next" id="lightboxNext" aria-label="Next image">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <polyline points="15 18 9 12 15 6" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
         </div>
     </section>
 
     <!-- Project Modal (for viewing images) -->
-    <div id="projectModal" class="modal" onclick="closeModal()">
-        <span class="modal-close">&times;</span>
-        <div class="modal-content" onclick="event.stopPropagation()">
-            <img id="modalImage" src="" alt="Project Image">
-            <div id="modalCaption" class="modal-caption"></div>
 
-            <!-- Navigation Buttons -->
-            <button class="modal-prev" onclick="changeImage(-1)">&#10094;</button>
-            <button class="modal-next" onclick="changeImage(1)">&#10095;</button>
-        </div>
-    </div>
 
     <!-- CONTACT SECTION -->
     <section id="contact" class="section-padding contact-section">
@@ -316,6 +334,7 @@
 
     <!-- External JavaScript -->
     <script src="script.js"></script>
+    <script src="gallery.js"></script>
 </body>
 
 </html>

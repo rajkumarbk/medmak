@@ -177,6 +177,7 @@ p {
     background-color: var(--red);
     color: var(--white);
     padding: 14px 36px;
+    margin-right: 70%;
     border-radius: 40px;
     font-family: var(--default-font);
     font-weight: 700;
@@ -535,7 +536,8 @@ p {
 }
 
 .about-image img {
-    margin-bottom: 20%;
+    margin-bottom: 25%;
+    object-fit: cover;
     width: 100%;
     border-radius: 10%;
     box-shadow: var(--shadow);

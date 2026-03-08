@@ -536,7 +536,7 @@ p {
 }
 
 .about-image img {
-    margin-bottom: 25%;
+    margin-bottom: 5%;
     object-fit: cover;
     width: 100%;
     border-radius: 10%;
@@ -1162,6 +1162,9 @@ p {
 @media (max-width: 768px) {
     .section-padding {
         padding: 60px 0;
+    }
+    .about-text p {
+    font-size: 1rem;
     }
 
     .hero-title {
